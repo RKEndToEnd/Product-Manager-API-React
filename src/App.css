@@ -13,6 +13,10 @@
   }
 }
 
+.navbar-wrapper a{
+  padding-left: 30px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
