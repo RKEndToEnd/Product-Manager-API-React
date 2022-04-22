@@ -11,7 +11,7 @@ function App() {
         <div className="App">
             <BrowserRouter>
                 <Header/>
-                <h1>Product Manager</h1>
+                <h4 className="card-header">Product Manager</h4>
                 <Routes>
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />

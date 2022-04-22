@@ -5,7 +5,7 @@ function Header() {
     return (
         <div>
             <Navbar bg="secondary" variant="dark">
-                <Navbar.Brand>Navbar</Navbar.Brand>
+                <Navbar.Brand>Product Manager</Navbar.Brand>
                 <Nav className="mr-auto navbar-wrapper">
                     <Link className="text-decoration-none text-white" to="/create">Create Product</Link>
                     <Link className="text-decoration-none text-white" to="/update">Update Product</Link>

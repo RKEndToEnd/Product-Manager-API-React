@@ -26,17 +26,17 @@ function Register() {
     }
 
     return (
-        <div className="d-flex container align-items-center justify-content-center">
+        <div className="d-flex container align-items-center justify-content-center" style={({marginTop: '30px'})}>
             <div className="card col-md-4">
                 <div className="card-header bg-info opacity-75">
-                    <h4>New account register</h4>
+                    <h6>New account register</h6>
                 </div>
                 <div className="card-body">
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicName">
                             <Form.Label>Username</Form.Label>
                             <Form.Control type="text" value={name} onChange={(e) => setName(e.target.value)}
-                                          placeholder="Enter username"/>
+                                          placeholder="Enter username" size="sm"/>
                             <Form.Text className="text-muted">
                                 Username require minimum 3 signs.
                             </Form.Text>
@@ -45,7 +45,7 @@ function Register() {
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
                             <Form.Control type="email" value={email} onChange={(e) => setEmail(e.target.value)}
-                                          placeholder="Enter email"/>
+                                          placeholder="Enter email" size="sm"/>
                             <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                             </Form.Text>
@@ -54,7 +54,7 @@ function Register() {
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
                             <Form.Control type="password" value={password} onChange={(e) => setPassword(e.target.value)}
-                                          placeholder="Password"/>
+                                          placeholder="Password" size="sm"/>
                             <Form.Text className="text-muted">
                                 Password require minimum 8 signs.
                             </Form.Text>
@@ -62,7 +62,7 @@ function Register() {
                     </Form>
                 </div>
                 <div className="card-footer bg-info opacity-75">
-                    <Button onClick={signUp} variant="outline-secondary" type="submit">
+                    <Button onClick={signUp} variant="outline-secondary" type="submit" size="sm">
                         Create new account
                     </Button>
                 </div>
