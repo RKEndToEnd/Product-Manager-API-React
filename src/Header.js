@@ -7,10 +7,18 @@ function Header() {
             <Navbar bg="secondary" variant="dark">
                 <Navbar.Brand>Product Manager</Navbar.Brand>
                 <Nav className="mr-auto navbar-wrapper">
-                    <Link className="text-decoration-none text-white" to="/create">Create Product</Link>
-                    <Link className="text-decoration-none text-white" to="/update">Update Product</Link>
-                    <Link className="text-decoration-none text-white" to="/login">Login</Link>
-                    <Link className="text-decoration-none text-white" to="/register">Register</Link>
+                    {
+                        localStorage.getItem('user-info') ?
+                            <>
+                                <Link className="text-decoration-none text-white" to="/create">Create Product</Link>
+                                <Link className="text-decoration-none text-white" to="/update">Update Product</Link>
+                            </>
+                            :
+                            <>
+                                <Link className="text-decoration-none text-white" to="/login">Login</Link>
+                                <Link className="text-decoration-none text-white" to="/register">Register</Link>
+                            </>
+                    }
                 </Nav>
             </Navbar>
         </div>
