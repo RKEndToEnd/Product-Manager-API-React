@@ -7,7 +7,7 @@ import Header from "./Header";
 function Register() {
 
     useEffect(() => {
-        if (localStorage.getItem('user-info')){
+        if (localStorage.getItem('user-info')) {
             navigate('/create')
         }
     }, [])
@@ -24,7 +24,7 @@ function Register() {
             body: JSON.stringify(item),
             headers: {
                 "Content-Type": 'application/json',
-                "Accept": 'apllication/json',
+                "Accept": 'application/json',
             }
         })
         result = await result.json()

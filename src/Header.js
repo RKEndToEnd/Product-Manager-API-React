@@ -7,7 +7,7 @@ function Header() {
 
     function logOut() {
         localStorage.clear()
-        navigate('/register')
+        navigate('/login')
     }
 
     return (
