@@ -18,6 +18,7 @@ function Header() {
                     {
                         localStorage.getItem('user-info') ?
                             <>
+                                <Link className="text-decoration-none text-white" to="/">Products</Link>
                                 <Link className="text-decoration-none text-white" to="/create">Create Product</Link>
                                 <Link className="text-decoration-none text-white" to="/update">Update Product</Link>
                             </>
