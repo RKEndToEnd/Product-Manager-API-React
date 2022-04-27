@@ -2,6 +2,7 @@ import Header from "./Header";
 import {Button, Form} from "react-bootstrap";
 import React from "react";
 import {useState} from "react";
+import {useNavigate} from "react-router-dom";
 
 function CreateProduct() {
     const [name, setName] = useState("")
@@ -9,6 +10,7 @@ function CreateProduct() {
     const [description, setDescription] = useState("")
     const [amount, setAmount] = useState("")
     const [file, setFile] = useState("")
+    const navigate = useNavigate();
 
     async function newProduct() {
         const formData = new FormData()
@@ -21,6 +23,7 @@ function CreateProduct() {
             method: 'POST',
             body: formData,
         })
+        navigate('/')
         alert("New product created!")
     }
 
